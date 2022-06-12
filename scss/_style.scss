@@ -1,0 +1,78 @@
+
+// 顏色
+.text-color{
+    color: $blue-100;
+}
+
+.btn-c{
+    color: $btn-c;
+}
+
+.bg-color{
+    color: $blue-100;
+}
+// 粗體
+.fw{
+    font-weight: bold;
+}
+
+// 字型大小
+.fz-48{
+    font-size: $fz-48;
+}
+
+.fz-32{
+    font-size: $fz-32;
+}
+.fz-24{
+   font-size: $fz-24;
+}
+.fz-20{
+   font-size: $fz-20;
+}
+.fz-18{
+  font-size: $fz-18;
+}
+.fz-16{
+  font-size: $fz-16;
+  
+}
+
+// 邊界
+
+.mt260{
+    margin-top: 260px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mr-47{
+    margin-right: 47px;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+// 間距
+.pb-32{
+    padding-bottom: 32px;
+}
+
+// 對齊
+.text-center{
+    text-align: center;
+}

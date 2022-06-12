@@ -1,0 +1,673 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+.bgi {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 851px 768px;
+}
+
+@media (max-width: 375px) {
+  .bgi {
+    max-width: 375px;
+    background-image: none;
+  }
+}
+
+.container {
+  max-width: 1088px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 88px;
+}
+
+@media (max-width: 375px) {
+  .header {
+    max-width: 375px;
+    height: 72px;
+    border-bottom: 3px solid #F6CB52;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .header img {
+    width: 130.84px;
+    margin-left: 20px;
+  }
+  .header .btn {
+    margin-right: 20px;
+  }
+}
+
+.btn {
+  background-color: #FF5D50;
+  border-radius: 22px;
+  padding: 8px 32px 8px 32px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.btn2 {
+  background-color: #56C4C5;
+  border-radius: 22px;
+  padding: 12px 32px 12px 32px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 217px;
+}
+
+.banner img {
+  display: block;
+  max-width: 532px;
+  height: 534px;
+  margin: 0 auto;
+}
+
+@media (max-width: 375px) {
+  .banner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 32px;
+    margin-bottom: 60px;
+  }
+  .banner .fz-48 {
+    font-size: 32px;
+  }
+  .banner img {
+    height: 305px;
+    margin-top: 32px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg);
+    background-size: 334px 244.79px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .banner .fz-20 {
+    font-size: 16px;
+  }
+}
+
+.platform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 969px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+
+.platform img {
+  display: block;
+  max-width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.platform h3 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.platform p {
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .media {
+    height: 618px;
+  }
+  .media h2 {
+    margin-bottom: 32px;
+  }
+  .platform {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 60px;
+  }
+  .platform img {
+    max-width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+  .platform h3 {
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  .platform p {
+    margin-bottom: 24px;
+  }
+}
+
+.role {
+  margin-bottom: 100px;
+}
+
+.role h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.role p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.role .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.role .item .card {
+  width: 260px;
+  height: 388px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.role .item .card h6 {
+  color: #56C4C5;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.role .item .card p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.role .item .card img {
+  display: block;
+  width: 260px;
+  height: 260px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+@media (max-width: 375px) {
+  .role {
+    margin-bottom: 28px;
+  }
+  .role h2 {
+    font-size: 28px;
+    margin-top: 60px;
+  }
+  .role p {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .role .item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .role .item .card {
+    margin-bottom: 24px;
+  }
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 507px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: -28px;
+}
+
+.feature .left .left-card {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  width: 230px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-bottom: 48px;
+  margin-bottom: 28px;
+}
+
+.feature .left .left-card h6 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.feature .left .circle {
+  width: 86px;
+  height: 86px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-radius: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feature .left .circle .img {
+  display: block;
+  width: 50px;
+  height: 51px;
+  background: transparent url("img/idea.png") 0% 0% no-repeat padding-box;
+  position: absolute;
+}
+
+.feature .right {
+  margin-left: 137px;
+}
+
+.feature .right h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.feature .right p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 375px) {
+  .feature {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    vertical-align: middle;
+    margin-bottom: -56px;
+  }
+  .feature .left {
+    width: 100%;
+    margin-bottom: 32px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .feature .right {
+    margin-left: 0%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .feature .right h2 {
+    font-size: 28px;
+  }
+  .feature .right p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.feedback-card {
+  height: 248px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  max-width: 352px;
+  margin-top: 104px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;
+}
+
+.feedback-card img {
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -56px;
+}
+
+.feedback-card p {
+  display: block;
+  font-size: 16px;
+  max-width: 288px;
+  margin-top: 48px;
+  padding-bottom: 16px;
+  text-align: justify;
+}
+
+.feedback-card h6 {
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.feedback-card hr {
+  border: 2px solid #00000014;
+}
+
+.feedback-card .star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/icon_star.svg);
+  width: 100px;
+  height: 16px;
+  position: absolute;
+  top: 204px;
+  right: 32px;
+  background-repeat: round;
+}
+
+@media (max-width: 375px) {
+  .feedback {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feedback-card {
+    padding-bottom: 16px;
+  }
+  .feedback-card .star {
+    top: 230px;
+  }
+}
+
+.footer-banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.footer-banner .info {
+  padding-top: 260px;
+  padding-bottom: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.footer-banner .info h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 375px) {
+  .footer-banner {
+    margin-top: 60px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/footer_sm.svg);
+  }
+  .footer-banner .info h2 {
+    font-size: 24px;
+  }
+  .footer-banner .info a {
+    font-size: 16px;
+  }
+}
+
+.footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #F5F5F5;
+}
+
+.footer p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.text-color {
+  color: #56C4C5;
+}
+
+.btn-c {
+  color: #FFFFFF;
+}
+
+.bg-color {
+  color: #56C4C5;
+}
+
+.fw {
+  font-weight: bold;
+}
+
+.fz-48 {
+  font-size: 48px;
+}
+
+.fz-32 {
+  font-size: 32px;
+}
+
+.fz-24 {
+  font-size: 24px;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.fz-18 {
+  font-size: 18px;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.mt260 {
+  margin-top: 260px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mr-47 {
+  margin-right: 47px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.text-center {
+  text-align: center;
+}
+/*# sourceMappingURL=all.css.map */
